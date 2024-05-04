@@ -1,3 +1,5 @@
+from users import User
+# Creted Admin class by inheriting an abstract class named User
 class Admin(User):
     def __init__(self, name, email, phone, address):
         super().__init__(name, email, phone, address)
@@ -14,3 +16,6 @@ class Admin(User):
         
     def remove_menu_item(self, restaurant, item):
         restaurant.menu.remove_menu_item(item)
+    
+    def view_menu(self, restaurant):
+        restaurant.menu.show_menu(restaurant)
