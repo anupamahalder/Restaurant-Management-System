@@ -1,4 +1,4 @@
-from users import User
+from User_Class import User
 # Creted Admin class by inheriting an abstract class named User
 class Admin(User):
     def __init__(self, name, email, phone, address):
